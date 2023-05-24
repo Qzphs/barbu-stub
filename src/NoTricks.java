@@ -2,7 +2,8 @@ import java.util.Random;
 
 public class NoTricks extends Minigame {
     private int[] tricksTaken = {0, 0, 0, 0};
-    public NoTricks() {
+    public NoTricks(int dealer) {
+        super(dealer);
         contract = Contract.NOTRICKS;
     }
     public void play() {
